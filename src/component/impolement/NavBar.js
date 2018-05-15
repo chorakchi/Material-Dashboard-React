@@ -22,8 +22,9 @@ const styles = {
     },
 };
 
-class AppBar extends React.Component {
+class NavBar extends React.Component {
     render() {
+        const {classes} = this.props
         return (
             <div>
                 <div className={classes.root}>
@@ -44,9 +45,9 @@ class AppBar extends React.Component {
     }
 }
 
-AppBar.prototype ={
+NavBar.prototype ={
     classes : PropTypes.object.isRequired
 }
 
 
-export default withStyles(styles)(AppBar)
+export default withStyles(styles)(NavBar)
